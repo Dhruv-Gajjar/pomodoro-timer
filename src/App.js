@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Login from "./components/Login";
 import { auth } from "./firebase"
-import Timer from './components/Timer';
+import Pomodro from './components/Pomodro';
 
 function App() {
   const [user, setUser] = useState({});
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="w-full h-full">
-      {!user ? <Login /> : <Timer user={user} />}
+      {!user ? <Login /> : <Pomodro user={user} />}
     </div>
   );
 }
