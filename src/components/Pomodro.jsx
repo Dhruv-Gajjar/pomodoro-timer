@@ -41,7 +41,7 @@ function Pomodro({ user }) {
             }
 
             setTimer(interval);
-        }, 10);
+        }, 1000);
     }
 
     const signout = async () => {
