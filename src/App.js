@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-screen bg-[#1B1A17] text-[#fff] overflow-hidden">
       {!user ? <Login /> : <Pomodro user={user} />}
     </div>
   );

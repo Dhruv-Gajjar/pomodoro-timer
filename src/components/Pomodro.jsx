@@ -1,7 +1,8 @@
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { AiOutlinePlayCircle, AiOutlinePauseCircle } from 'react-icons/ai'
-import { GrPowerReset } from 'react-icons/gr'
+import { BiReset } from 'react-icons/bi'
+import { FiLogOut } from "react-icons/fi"
 import { useEffect, useState } from "react";
 
 function Pomodro({ user }) {
@@ -80,22 +81,29 @@ function Pomodro({ user }) {
 
     return (
         <>
-            <div className="flex items-center justify-between mt-8 px-10">
+            <div className="flex items-center justify-between mx-8 p-4 border-solid border-b-2 border-[#4285F4]">
                 <h3>Hello, {user.displayName}</h3>
-                <button className="bg-[#4285F4] p-3 rounded-lg cursor-pointer" onClick={signout}>Sign Out</button>
+                <div className="flex items-center justify-center space-x-3 ring-2 ring-[#4285F4] ring-inset p-3 rounded-lg cursor-pointer">
+                    <FiLogOut />
+                    <button onClick={signout}>Sign Out</button>
+                </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center space-y-8">
-                <h1 className="mt-10">Pomodro Timer</h1>
-                {mode === 'work' ? "WORK" : "BREAK"}
+            <div className="flex flex-col items-center justify-center mt-4 space-y-6">
+                <h1 className="font-bold">Pomodro Timer</h1>
+                {mode === 'work'
+                    ? <h3 className="text-4xl font-bold text-[#42855B]">WORK</h3>
+                    : <h3 className="text-4xl font-bold text-[#C84B31]">BREAK</h3>}
                 <div className="text-6xl">{
-                    mode === 'work' ? <div>{workMinutes} : {timeSeconds}</div> : <div>{breakMinutes} : {timeSeconds}</div>
+                    mode === 'work'
+                        ? <div className="flex items-center justify-center w-[300px] h-[300px] ring-2 ring-[#42855B] ring-inset rounded-full text-[#42855B]">{workMinutes} : {timeSeconds}</div>
+                        : <div className="flex items-center justify-center w-[300px] h-[300px] ring-2 ring-[#C84B31] ring-inset rounded-full text-[#C84B31]">{breakMinutes} : {timeSeconds}</div>
                 }</div>
 
-                <div className="flex items-center justify-between space-x-6 mt-8 cursor-pointer">
+                <div className="flex items-center justify-between space-x-6 cursor-pointer text-[#fff]">
                     <AiOutlinePlayCircle size={50} onClick={() => setTimerMode(true)} />
                     <AiOutlinePauseCircle size={50} onClick={() => setTimerMode(false)} />
-                    <GrPowerReset size={50} onClick={reset} />
+                    <BiReset size={50} onClick={reset} />
                 </div>
             </div>
         </>
