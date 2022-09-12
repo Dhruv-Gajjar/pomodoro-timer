@@ -92,12 +92,12 @@ function Pomodro({ user }) {
             <div className="flex flex-col items-center justify-center mt-4 space-y-6">
                 <h1 className="font-bold">Pomodro Timer</h1>
                 {mode === 'work'
-                    ? <h3 className="text-4xl font-bold text-[#42855B]">WORK</h3>
+                    ? <h3 className="text-4xl font-bold text-[#4E9F3D]">WORK</h3>
                     : <h3 className="text-4xl font-bold text-[#C84B31]">BREAK</h3>}
                 <div className="text-6xl">{
                     mode === 'work'
-                        ? <div className="flex items-center justify-center w-[300px] h-[300px] ring-2 ring-[#42855B] ring-inset rounded-full text-[#42855B]">{workMinutes} : {timeSeconds}</div>
-                        : <div className="flex items-center justify-center w-[300px] h-[300px] ring-2 ring-[#C84B31] ring-inset rounded-full text-[#C84B31]">{breakMinutes} : {timeSeconds}</div>
+                        ? <div className="flex items-center justify-center w-[300px] h-[300px] ring-4 ring-[#4E9F3D] ring-inset rounded-full text-[#4E9F3D] font-bold">{workMinutes} : {timeSeconds}</div>
+                        : <div className="flex items-center justify-center w-[300px] h-[300px] ring-4 ring-[#C84B31] ring-inset rounded-full text-[#C84B31] font-bold">{breakMinutes} : {timeSeconds}</div>
                 }</div>
 
                 <div className="flex items-center justify-between space-x-6 cursor-pointer text-[#fff]">
