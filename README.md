@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Pomodro Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Pomodro-TImer](https://user-images.githubusercontent.com/100516908/190589517-15932349-bfc1-49b0-a1a5-937889261dc9.png)
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Live Demo of the proejct [here](https://pomodro-timer-sage.vercel.app/)
 
-### `npm start`
+# Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Things i learned is Authentication with google using firebase and using React hooks like useSate and useEffect manipulating data using useSate hook and changing the timer in the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Techonology Used
+  - React
+  - TailwindCss
+  - Firebase
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before cloning this project, make sure you have the following tools installed:
 
-### `npm run build`
+On your computer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Git](https://git-scm.com/downloads)
+- [VS Code](https://code.visualstudio.com/download) (or an IDE of your choice)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. In the console go to the directory where you want to save the project by typing the following command (example):
+```bash
+cd projects && mkdir pomodro-timer && cd pomodro-timer
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Clone the project by typing the following command:
+```bash
+git clone https://github.com/Dhruv-Gajjar/pomodro-timer.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Navigate to the project directory and open the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd landing-page && code .
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Run the project by right click on the `index.html` file and choose **Open with Live Server** (the port should open automatically)
