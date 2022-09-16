@@ -1,4 +1,4 @@
-# Pomodro Timer
+# Pomodoro Timer
 
 ![Pomodro-TImer](https://user-images.githubusercontent.com/100516908/190589517-15932349-bfc1-49b0-a1a5-937889261dc9.png)
 
